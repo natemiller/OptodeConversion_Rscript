@@ -2,7 +2,7 @@
 #2014 Nate Miller
 #This function can be used to convert measured phase and temperature output from a Presens PSt3 optode sensor (spot or probe)
 #into %O2 saturation using user predefined calibration values for phase and temperature at 0% O2 saturation and 100% O2 
-#saturation. 
+#saturation. Additional information on potential use of this fucntion is available here www.nate-miller.org/blog/presens-optode-conversion-phase-into-saturation-using-r-function
 
 #cal0 = phase value of 0% O2 saturation calibration
 #T0 = temperature value of 0% O2 saturation calibration
