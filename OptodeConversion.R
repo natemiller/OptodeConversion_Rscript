@@ -33,6 +33,11 @@ optode<-function(cal0,T0,cal100,T100,phase,temp) {
 	c=tanmTm/tan0Tm-1
 	saturation=(-((tan(phase*pi/180))/(tan((cal0+(deltaPsiK*(temp-T0)))*pi/180))*(KsvT100+(deltaKsvK*(temp-T100)))
 	+(tan(phase*pi/180))/(tan((cal0+(deltaPsiK*(temp-T0)))*pi/180))*1/m*(KsvT100+(deltaKsvK*(temp-T100)))-f1*1/m*
-	(KsvT100+(deltaKsvK*(temp-T100)))-(KsvT100+(deltaKsvK*(temp-T100)))+f1*(KsvT100+(deltaKsvK*(temp-T100))))+(sqrt((((tan(phase*pi/180))/(tan((cal0+(deltaPsiK*(temp-T0)))*pi/180))*(KsvT100+(deltaKsvK*(temp-T100)))+(tan(phase*pi/180))/(tan((cal0+(deltaPsiK*(temp-T0)))*pi/180))*1/m*(KsvT100+(deltaKsvK*(temp-T100)))-f1*1/m*(KsvT100+(deltaKsvK*(temp-T100)))-(KsvT100+(deltaKsvK*(temp-T100)))+f1*(KsvT100+(deltaKsvK*(temp-T100)))))^2-4*((tan(phase*pi/180))/(tan((cal0+(deltaPsiK*(temp-T0)))*pi/180))*1/m*(KsvT100+(deltaKsvK*(temp-T100)))^2)*((tan(phase*pi/180))/(tan((cal0+(deltaPsiK*(temp-T0)))*pi/180))-1))))/(2*((tan(phase*pi/180))/(tan((cal0+(deltaPsiK*(temp-T0)))*pi/180))*1/m*(KsvT100+(deltaKsvK*(temp-T100)))^2))
+	(KsvT100+(deltaKsvK*(temp-T100)))-(KsvT100+(deltaKsvK*(temp-T100)))+f1*(KsvT100+(deltaKsvK*(temp-T100))))+
+	(sqrt((((tan(phase*pi/180))/(tan((cal0+(deltaPsiK*(temp-T0)))*pi/180))*(KsvT100+(deltaKsvK*(temp-T100)))+
+	(tan(phase*pi/180))/(tan((cal0+(deltaPsiK*(temp-T0)))*pi/180))*1/m*(KsvT100+(deltaKsvK*(temp-T100)))-f1*1/m*(KsvT100+
+	(deltaKsvK*(temp-T100)))-(KsvT100+(deltaKsvK*(temp-T100)))+f1*(KsvT100+(deltaKsvK*(temp-T100)))))^2-4*
+	((tan(phase*pi/180))/(tan((cal0+(deltaPsiK*(temp-T0)))*pi/180))*1/m*(KsvT100+(deltaKsvK*(temp-T100)))^2)*
+	((tan(phase*pi/180))/(tan((cal0+(deltaPsiK*(temp-T0)))*pi/180))-1))))/(2*((tan(phase*pi/180))/(tan((cal0+
+	(deltaPsiK*(temp-T0)))*pi/180))*1/m*(KsvT100+(deltaKsvK*(temp-T100)))^2))
 }
-
